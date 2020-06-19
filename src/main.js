@@ -1,25 +1,15 @@
 import Vue from 'vue'
 
-// 1. 导入vue-router包
-import VueRouter from 'vue-loader'
+import VueRouter from "vue-router";
 
 // 2. 手动安装 VueRouter
 Vue.use(VueRouter)
 
 // 导入 app 组件，这里要注意路径的问题
 import app from './App.vue'
-// 导入 account 组件
-import account from './main/account.vue'
-// 导入 goodslist 组件
-import goodsList from './main/goodslist.vue'
 
-// 3. 创建一个路由对象
-var routerObj = new VueRouter({
-    routes:[
-        { path:'/account',component:account },
-        { path:'/goodslist',component:goodsList}
-    ]
-})
+// 导入自定义 路由 模块
+import routerObj from './router'
 
 var vm = new Vue({
     el:'#app',

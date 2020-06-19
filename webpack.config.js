@@ -47,6 +47,15 @@ module.exports = {
         alias: { //修改 vue 被导入的包的路径
             // "vue$":"vue/dist/vue.js"
         }
+    },
+    node: {
+
+        fs: 'empty',
+
+        net:'empty',
+
+        tls:"empty",
+
     }
 }
 
